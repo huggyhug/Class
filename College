@@ -1,0 +1,102 @@
+class College():
+    
+    def __init__(self,first,last,email,YearCollege):
+        
+        self.first = first
+        self.last = last
+        self.email = email
+        self.YearCollege = YearCollege
+
+    def getStats(self):
+        print('{},{}'.format(self.first,self.last))
+
+    def speak_name(self):
+         print('Your name is %s ' % self.first)    
+    
+a = College('Jim','Black','email','Junior')
+b = College('Joe','Brown','email','Freshman')
+c = College ('Rose','Black','email','Junior')
+d = College('Frank','Sunny','email','Sophmore')
+list = [a,b]
+
+
+YearCollege = ['Freshman','Sophmore','Junior','Senior']
+nameList = [YearCollege,'Junior']
+
+##def createName(self,name):
+##        self.name=name
+
+def menu():
+        
+        print('Press 1: To see student info ')
+        print('Press 2')
+        print('Press 3')
+        print('Press 4')
+        return input ('Please choose from list: ')
+    
+run = menu()
+
+if run == '1':
+    print()
+    name = input('Which student do you want to see? : ')
+    for l in list:
+        print(College.getStats(l))
+
+        
+    
+    
+    
+            
+b.getStats()
+c.speak_name()    
+   
+##
+    # instance variable unique to each instance
+
+   
+
+         
+##1000 = ['Jim','Black','email','Junior']
+##2000 = ['Joe','Brown','email','Freshman']
+##3000 = ['Rose','Black','email','Junior']
+##4000 = ['Frank','Sunny','email','Sophmore']
+
+
+
+    
+     # class variable shared by all instances
+##print (YearCollege)
+##speak_name(a)
+
+     # shared by all
+##     def getName(self, name):
+##        print('Your name is %s ' % self.name)
+         
+
+##class Student(College):
+##    def __init__(self):
+##        College.__int__(self)
+##
+
+    
+##
+##    def setAge(self,age):
+##        self.age = age
+    
+
+
+
+
+##print (a.first, a.last)
+##print (a.YearCollege)
+##print(a.email)
+##print (b.first, b.last)
+##print (a.YearCollege)
+
+       
+      # unique to each
+
+
+ 
+ 
+     
